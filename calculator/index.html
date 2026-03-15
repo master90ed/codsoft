@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="calculator">
+    <p class="brand">CASIO fx-991</p>
+
+    <div class="screen">
+      <p id="expression"></p>
+      <p id="result">0</p>
+    </div>
+
+    <div class="buttons">
+      <button class="red" onclick="clearAll()">AC</button>
+      <button class="gray" onclick="deleteLast()">DEL</button>
+      <button class="gray" onclick="doPercent()">%</button>
+      <button class="blue" onclick="pressKey('/')">÷</button>
+
+      <button onclick="pressKey('7')">7</button>
+      <button onclick="pressKey('8')">8</button>
+      <button onclick="pressKey('9')">9</button>
+      <button class="blue" onclick="pressKey('*')">×</button>
+
+      <button onclick="pressKey('4')">4</button>
+      <button onclick="pressKey('5')">5</button>
+      <button onclick="pressKey('6')">6</button>
+      <button class="blue" onclick="pressKey('-')">−</button>
+
+      <button onclick="pressKey('1')">1</button>
+      <button onclick="pressKey('2')">2</button>
+      <button onclick="pressKey('3')">3</button>
+      <button class="blue" onclick="pressKey('+')">+</button>
+
+      <button class="wide" onclick="pressKey('0')">0</button>
+      <button onclick="pressDot()">.</button>
+      <button class="green wide" onclick="getResult()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
